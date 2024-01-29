@@ -1,0 +1,70 @@
+/* style.css */
+:root {
+    --main: #0EC998;
+    --background2: #131F1F;
+}
+
+body {
+    margin: 0;
+    /* justify-content: center;
+    align-items: center; */
+    background-color: #131F1F;
+}
+
+.button-container {
+    margin-left: 5rem; /* Отступ слева */
+    margin-top: 5rem; /* Отступ сверху */
+    position: relative; /* Устанавливает относительное позиционирование контейнера */
+    display: flex; /* Включает flex-контейнер */
+    flex-direction: row; /* Устанавливает горизонтальное направление элементов внутри контейнера */
+    justify-content: center; /* Центрирует содержимое по главной оси */
+    align-items: center; /* Центрирует содержимое по поперечной оси */
+    height: 80px; /* Высота контейнера */
+    width: 300px; /* Ширина контейнера */
+    /* border: solid 2px greenyellow; Рамка вокруг контейнера (отключена) */
+}
+
+.btn {
+    position: absolute; /* Абсолютное позиционирование кнопки внутри .button-container */
+    top: 50%; /* Вертикальное центрирование кнопки */
+    left: 50%; /* Горизонтальное центрирование кнопки */
+    transform: translate(-50%, -50%); /* Точное центрирование позиции кнопки */
+    z-index: 2; /* Установка кнопки над .spinner-container */
+    background-color: var(--main); /* Цвет фона кнопки */
+    color: var(--background2); /* Цвет текста кнопки */
+    text-align: center; /* Выравнивание текста по центру */
+    cursor: pointer; /* Тип курсора при наведении */
+    border-radius: 2.5rem; /* Радиус скругления углов кнопки */
+    padding: 1rem 1.78rem; /* Внутренние отступы кнопки */
+    font-size: .875rem; /* Размер шрифта текста кнопки */
+    font-weight: 500; /* Жирность шрифта текста кнопки */
+    line-height: 142.857%; /* Высота строки текста кнопки */
+    text-decoration: none; /* Отмена подчеркивания текста кнопки */
+    transition: transform .1s cubic-bezier(.645, .045, .355, 1); /* Анимация трансформации кнопки */
+    display: inline-block; /* Отображение кнопки в строке с другими элементами */
+    box-shadow: 4px 0 40px rgba(0, 107, 94, .58); /* Тень кнопки */
+    width: 150px; /* Ширина кнопки */
+    /* border: solid 2px yellow; Рамка вокруг кнопки (отключена) */
+}
+
+.spinner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    z-index: 1;
+    /* border: solid 2px orchid; */
+}
+
+.svg-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 2px bisque; */
+}
